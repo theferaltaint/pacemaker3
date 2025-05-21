@@ -648,7 +648,7 @@ const PacemakerQuiz: React.FC = () => {
             {(quizStarted && !showScore) && (
                 <div style={{ display: "flex", gap: 12, marginBottom: 20 }}>
                     <button onClick={restartQuiz} className="quiz-action-btn">Restart Quiz</button>
-                    <button onClick={startQuiz} className="quiz-action-btn">Regenerate Questions</button>
+                    <button onClick={regenerateQuestions} className="quiz-action-btn">Regenerate Questions</button>
                 </div>
             )}
             {!quizStarted ? (
